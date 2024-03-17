@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tabla Dinámica con JavaScript</title>
+<style>
+    /* Estilos para la tabla */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+</style>
+</head>
+<body>
+
+<!-- Estructura HTML básica -->
+<table id="miTabla">
+    <thead>
+        <tr>
+            <th>Columna 1</th>
+            <th>Columna 2</th>
+            <th>Columna 3</th>
+            <!-- Puedes agregar más columnas según sea necesario -->
+        </tr>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
+
+<script>
+// Función para agregar una fila a la tabla con los datos proporcionados
+function agregarFila(datos) {
+    var tabla = document.getElementById("miTabla").getElementsByTagName('tbody')[0];
+    var nuevaFila = tabla.insertRow();
+
+    for (var i = 0; i < datos.length; i++) {
+        var celda = nuevaFila.insertCell();
+        celda.innerHTML = datos[i];
+    }
+}
+
+// Datos para la tabla (ejemplo)
+var nuevosDatos = [
+    ["Dato 1-1", "Dato 1-2", "Dato 1-3"],
+    ["Dato 2-1", "Dato 2-2", "Dato 2-3"],
+    ["Dato 3-1", "Dato 3-2", "Dato 3-3"],
+    // Puedes agregar más filas de datos según sea necesario
+];
+
+// Llenar la tabla con los nuevos datos
+for (var i = 0; i < nuevosDatos.length; i++) {
+    agregarFila(nuevosDatos[i]);
+}
+</script>
+
+</body>
+</html>

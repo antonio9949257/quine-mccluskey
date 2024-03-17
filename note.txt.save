@@ -1,0 +1,19 @@
+zero teep
+funcion minterminos
+FUNCION INPUT:¬A*¬B+B*A+¬C*¬D*¬A
+2da Funcion input equivalente(A,B,C,D)--->
+FUNCION OUTPUT:
+
+Variables globales
+Firts teep
+n> dimencion de variables
+//TV[COLUMNA][FILA]  COLOMUNA=DECIMAL_INGRESADO:DECIMAL A BINARIO. 
+TV[2^n][n] Matriz tabla de verdad: INPUT=5--> n=4 --> TV[2^4][4] -->Asignacion de valores a la tabla de verdad TV[16][4]
+
+Encontrar la ubicacion del decimal:
+A[COLUMNA][FILA]
+INPUT=5 -->A[5][4]=0101 ;
+A[INPUT][n] ----> binarios de [0,1,0,1]	
+
+second teep
+Comparacion 
